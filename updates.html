@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Ribbons Dashboard | Wedding Registry, Bridal Registry &amp; Wedding Gifts</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dxuap8kxy/image/upload/v1534437775/ribweb3/rb.ico" />
+    
+     <!-- Bootstrap core CSS     -->
+     <link href="https://res.cloudinary.com/dzomirrk1/raw/upload/v1531083183/cvii/bootstrap.min.css" rel="stylesheet" />
+
+     <!-- Animation library for notifications   -->
+     <link href="https://res.cloudinary.com/dzomirrk1/raw/upload/v1531083181/cvii/animate.min.css" rel="stylesheet"/>
+ 
+     <!-- Dashboard core CSS    -->
+     <link href="assets/css/style.css" rel="stylesheet"/>
+ 
+     <!--  Fonts and icons     -->
+     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+     
+     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+     
+     <link href="https://res.cloudinary.com/dzomirrk1/raw/upload/v1531083483/cvii/themify-icons.css" rel="stylesheet">
+
+    <!-- script tag for next previous button -->
+    <script>
+    
+    $('#pagination-demo').twbsPagination({
+        totalPages: 5,
+        visiblePages: 6,
+        next: 'Next',
+        prev: 'Prev',
+        onPageClick: function (event, page) {
+
+            //fetch content and render here
+            $('#page-content').text('Page ' + page) + ' content here';
+        }
+    });
+    
+    </script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-background-color="white" data-active-color="danger">
+        
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                    <a href="index.html" class="simple-text"><img src="https://res.cloudinary.com/dzomirrk1/image/upload/v1530621344/Ribbons%20Website/Images/12.png" style="width:40%; "></a>
+            </div>
+
+            <ul class="nav">
+                    <li>
+                        <a href="index.html">
+                            <i class="ti-panel"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="edit_profile.html">
+                            <i class="ti-pencil"></i>
+                            <p>Edit Profile</p>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="wedding_website.html" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="ti-world"></i>
+                            <p>Wedding Website <b class="caret"></b></p>
+                        </a>
+                        <ul class="dropdown-menu">
+                                <li><a href="wedding_website.html">View Wedding Website</a></li>
+                                <li><a href="wedding_website.html">Share Website Link</a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="updates.html">
+                            <i class="ti-stats-up"></i>
+                            <p>View Updates</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="accounts.html">
+                            <i class="ti-wallet"></i>
+                            <p>Cash Withdrawals</p>
+                        </a>
+                    </li>
+            </ul>
+    	</div>
+    </div>
+    
+    <!-- this part handles the toggle view for mobile view as well -->
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Updates</a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="ti-user"></i>
+                                <p>#FolaShay18</p>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                    <li><a href="#">Account Settings</a></li>
+                                    <li><a href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- This part of the UI sums up number of orders logged in and how much was made     -->
+
+            <div class="container-fluid"><br>
+                <div class="dry pull-right">
+                        <label for="dateofbirth"><input type="date" name="dateofbirth" id="dateofbirth"></label>
+                </div>
+            </div>
+        
+
+        <div class="content">
+               
+
+                <div class="container-fluid">
+                    
+                    <p>Here are the updates on people visiting your wedding website so far.</p><br>
+                    
+                    <div class="row">
+
+                                <div class="col-md-4">
+                                    <div class="card"><br>    
+                                        <a href="#RSVP" style="color: #777;">
+                                            <div class="panel-body text-center">
+                                            <img src="https://res.cloudinary.com/dzomirrk1/image/upload/v1531083789/cvii/l1.png" style="width:50px; height:50px;" class="center"> <br>
+                                            <h1>1,320</h1>
+                                            <p>RSVPs</p>
+                                            </div>
+                                        </a>            
+                                    </div>
+                                </div>
+                                      
+                          
+                                <div class="col-md-4">
+                                    <div class="card"><br>    
+                                        <a href="#Wishes" style="color: #777;">
+                                        <div class="panel-body text-center">
+                                            <img src="https://res.cloudinary.com/dzomirrk1/image/upload/v1531083789/cvii/l2.png" style="width:50px; height:50px;" class="center"> <br>
+                                            <h1>320</h1>
+                                            <p>Well Wishes</p>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card"><br>    
+                                        <a href="#Gifts" style="color: #777;">
+                                        <div class="panel-body text-center">
+                                            <img src="https://res.cloudinary.com/dzomirrk1/image/upload/v1531083790/cvii/r3.png" style="width:50px; height:50px;" class="center"> <br>
+                                            <h1>42</h1>
+                                            <p>Gifts Purchased</p>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                          
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="card"><br>    
+                            <a href="#Gifts" style="color: #777;">
+                                <div class="panel-body text-center">
+                                    <img src="https://res.cloudinary.com/dzomirrk1/image/upload/v1531083789/cvii/l4.png" style="width:50px; height:50px;" class="center"> <br>
+                                    <h1>#753,000</h1>
+                                    <p>Gifts Price Cash Equivalent</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-6">
+                            <div class="card"><br>  
+                            <a href="#Gifts" style="color: #777;">  
+                                <div class="panel-body text-center">
+                                    <img src="https://res.cloudinary.com/dzomirrk1/image/upload/v1531083789/cvii/l5.png" style="width:50px; height:50px;" class="center"> <br>
+                                <h1>Kitchen Utensils</h1>
+                                <p>Most Purchased Gift</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                
+                    </div><!-- End of Row -->
+                
+                    
+                </div>
+        
+                <br>
+
+                <div class="container-fluid">
+                        <p style="color: #f9508c;">Gift(s) List:</p>
+                        <br>
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="card">
+                              
+                                <br><br>
+                                <div class="content table-responsive table-full-width">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <th>Date</th>
+                                            <th>Purchaser's Name</th>
+                                            <th>Phone Number</th>
+                                            <th>Gift(s) Type</th>
+                                            <th>Total Amount</th>
+                                            
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>19/05/2018</td>
+                                                <td>Kwame Eugene</td>
+                                                <td>08002343534</td>
+                                                <td>Kwaku Mensah</td>
+                                                <td><strong>15 GHC</strong></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>19/05/2018</td>
+                                                <td>Kwame Eugene</td>
+                                                <td>08002343534</td>
+                                                <td>Kwaku Mensah</td>
+                                                <td><strong>15 GHC</strong></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>19/05/2018</td>
+                                                <td>Kwame Eugene</td>
+                                                <td>08002343534</td>
+                                                <td>Kwaku Mensah</td>
+                                                <td><strong>15 GHC</strong></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>19/05/2018</td>
+                                                <td>Kwame Eugene</td>
+                                                <td>08002343534</td>
+                                                <td>Kwaku Mensah</td>
+                                                <td><strong>15 GHC</strong></td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                        
+                                    </table>
+
+                                    
+    
+                                </div>
+
+                                
+                            </div>
+                        
+                            
+                        
+                        </div>
+
+
+                        <br><br>
+
+                <div class="container-fluid">
+                        <p style="color: #f9508c;">RSVP List:</p>
+                        <br>
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="card">
+                              
+                                <br><br>
+                                <div class="content table-responsive table-full-width">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <th>Name</th>
+                                            <th>Phone Number</th>
+                                            <th>Well Wish Message</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Kwame Eugene</td>
+                                                <td>08002343534</td>
+                                                <td>I love you guys</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Kwame Eugene</td>
+                                                <td>08002343534</td>
+                                                <td>I love you guys</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Kwame Eugene</td>
+                                                <td>08002343534</td>
+                                                <td>I love you guys</td>
+                                            </tr>
+
+                                           <tr>
+                                                <td>Kwame Eugene</td>
+                                                <td>08002343534</td>
+                                                <td>I love you guys</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                        
+                                    </table>
+
+                                    
+    
+                                </div>
+
+                                
+                            </div>
+                        
+                            
+                        
+                        </div>
+
+
+                        
+
+                        <footer class="footer">
+                            <div class="container-fluid">
+                                <div class="copyright pull-right">
+                                        &copy; <script>document.write(new Date().getFullYear())</script> Dashboard designed by <a href="https://www.withribbons.com/" target="_blank">Ribbons</a>
+                                </div>
+                            </div>
+                        </footer>
+
+                    </div>
+
+                   
+
+                </div>
+
+
+</body>
+<!--   Core JS Files   -->
+<script src="https://res.cloudinary.com/dzomirrk1/raw/upload/v1531083611/cvii/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="https://res.cloudinary.com/dzomirrk1/raw/upload/v1531083608/cvii/bootstrap.min.js" type="text/javascript"></script>
+
+<!--  Checkbox, Radio & Switch Plugins -->
+<script src="https://res.cloudinary.com/dzomirrk1/raw/upload/v1531083607/cvii/bootstrap-checkbox-radio.js"></script>
+
+<!--  Notifications Plugin    -->
+<script src="https://res.cloudinary.com/dzomirrk1/raw/upload/v1531083607/cvii/bootstrap-notify.js"></script>
+
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<!-- Main JS -->
+<script src="https://res.cloudinary.com/dzomirrk1/raw/upload/v1531083608/cvii/main.js"></script>
+
+	
+</html>
