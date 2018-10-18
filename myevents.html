@@ -122,7 +122,7 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand" href="#">SetUp Events</a>
+                    <a class="navbar-brand" href="#">Your Events</a>
                 </div>
 
                 <div class="collapse navbar-collapse">
@@ -147,94 +147,52 @@
          <div class="content">
             <div class="container-fluid">
                 
-                <h5>Welcome, setup your event by filling the form.</h5><br>
+                <h5>Here are the events you have created so far, you can click on them to view more details:</h5><br>
                 
                 <div class="row">
 
                     <div class="col-md-12">
-                        
+
                         <div class="card">
-
-                            <div class="content">
-
-                                <form >
-
-                                    <h5 style="color: #f9508c;">Event Name:</h5>
+                            
+                            <div class="content table-responsive table-full-width">
+                                
+                                <table class="table table-striped">
+                                
+                                    <thead>
                                     
-                                    <div class="row">
-
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" id="" name="" class="form-control border-input" placeholder="Enter Event Name" required>
-                                            </div>
-                                        </div>
-                                            
-                                    </div>
-
-                                    <h5 style="color: #f9508c;">Event Type:</h5>
+                                        <tr style="color: #f9508c;">
                                     
-                                    <div class="row">
-
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" id="" name="" class="form-control border-input" placeholder="Select Event Type" required>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <h5 style="color: #f9508c;">Event Date:</h5>
+                                            <th>S/N</th>
                                     
-                                    <div class="row">
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" id="" name="" class="form-control border-input" required>
-                                            </div>
-                                        </div>
-                                            
-                                    </div>
-
+                                            <th>Event Name</th>
                                     
-                                    <h5 style="color: #f9508c;">Budgeting:</h5>
+                                            <th>Event Type</th>
+
+                                            <th>Event Date</th>
                                     
-                                    <div class="row">
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Expected Number of Guests?</label>
-                                                <input type="text" id="" name="" class="form-control border-input" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Budget Range in NGN Naira</label>
-                                                <input type="text" id="" name="" class="form-control border-input" required>
-                                            </div>
-                                        </div>
-                                            
-                                    </div>
-
-                                    <br>
-
-                                    <button type="submit" class="btn btn-info btn-fill btn-wd">Save Event</button>
+                                        </tr>
                                     
-                                    <div class="clearfix"></div>
-                                    
-                                    <br>
+                                    </thead>
 
-                                </form>
+                                    <tbody>
+                                        
+                                        <tr onmouseover="ChangeColor(this, true);" onmouseout="ChangeColor(this, false);" onclick="DoNav('myeventdetails.html');">
+                                            <td>1</td>
+                                            <td>EbForever</td>
+                                            <td>Wedding</td>
+                                            <td>27/04/2018</td>
+                                        </tr>
+                                    
+                                    </tbody>
+                                
+                                </table>
+
                             </div>
-                        
                         </div>
-                    
                     </div>
-                
                 </div>
-            
             </div>
-        
         </div>
 
 
