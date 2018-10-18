@@ -2769,14 +2769,14 @@ img.center {
   background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
 }
 
-input {
+/* input {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
   background-color: #fff;
   padding: 3px 5px;
   box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
   width: 190px;
-}
+} */
 
 .card .dry {
   padding: 0px 20px 0; 
@@ -2858,3 +2858,94 @@ input {
   background-color: #f9508c;
   border-radius: 10px;
 }
+
+
+/* checklist */
+
+.page-title-box {
+    font-size: 13px;
+}
+.page-title-box {
+    padding: 22px 0;
+}
+
+.page-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.st-accordion {
+}
+
+.panel-group {
+  margin-bottom: 20px;
+}
+
+.st-accordion .panel-group .panel {
+  border-radius: 0px;
+}
+
+.st-accordion .panel-default {
+  border-color: #e9e6e0;
+}
+
+
+
+.st-accordion .panel-default>.panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #e9e6e0;
+}
+
+.st-accordion .panel-heading {
+  padding: 20px;
+  border-bottom: 0px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.st-accordion .panel-title {
+  position: relative;
+}
+
+.titlew {
+  color: #f9508c !important;
+}
+
+.st-accordion .sign {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.todo-list-group {
+  border-top: 1px solid #f0efea;
+}
+
+ul.listnone {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.todo-list-item {
+  border-bottom: 1px solid #f0efea;
+  padding: 20px;
+}
+
+.todo-list {
+}
+
+.todo-task {
+}
+
+.todo-title {
+  margin-bottom: 0px;
+  font-size: 15px;
+  color: #3c3837;
+}
+
+.titlet {
+  color: #000;
+}
+
