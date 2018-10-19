@@ -31,6 +31,8 @@
      
      <link href="https://res.cloudinary.com/dzomirrk1/raw/upload/v1531083483/cvii/themify-icons.css" rel="stylesheet">
 
+     <script src="assets/js/invoice.js"></script>
+
      <!-- This code enables the row table data to be clickable -->
      <script type="text/javascript">
         
@@ -75,16 +77,9 @@
                     </a>
                 </li> -->
                 
-                <!-- <li>
-                    <a href="createtemplates.html">
-                        <i class="ti-pencil"></i>
-                        <p>Create Templates</p>
-                    </a>
-                </li> -->
-                
                 <li class="dropdown">
                     
-                    <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="mycompany.html" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="ti-world"></i>
                         <p>My Company  <b class="caret"></b></p>
                     </a>
@@ -95,7 +90,7 @@
                             
                         <li><a href="">Calendar</a></li>
 
-                        <li><a href="">Invocing</a></li>
+                        <li><a href="invoice.html">Invocing</a></li>
 
                         <li><a href="">Company Website</a></li>
 
@@ -122,7 +117,7 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand" href="#">SetUp Events</a>
+                    <a class="navbar-brand" href="#">Invoice</a>
                 </div>
 
                 <div class="collapse navbar-collapse">
@@ -147,94 +142,69 @@
          <div class="content">
             <div class="container-fluid">
                 
-                <h5>Welcome, setup your event by filling the form.</h5><br>
+                <br>
                 
+                <h5>Create quick invoice and send to clients:</h5><br>
+
                 <div class="row">
 
-                    <div class="col-md-12">
-                        
-                        <div class="card">
+                        <div class="col-md-12">
+    
+                            <div class="card">
+                                
+                                
 
-                            <div class="content">
-
-                                <form >
-
-                                    <h5 style="color: #f9508c;">Event Name:</h5>
-                                    
-                                    <div class="row">
-
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" id="" name="" class="form-control border-input" placeholder="Enter Event Name" required>
-                                            </div>
-                                        </div>
-                                            
-                                    </div>
-
-                                    <h5 style="color: #f9508c;">Event Type:</h5>
-                                    
-                                    <div class="row">
-
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" id="" name="" class="form-control border-input" placeholder="Select Event Type" required>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <h5 style="color: #f9508c;">Event Date:</h5>
-                                    
-                                    <div class="row">
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" id="" name="" class="form-control border-input" required>
-                                            </div>
-                                        </div>
-                                            
-                                    </div>
-
-                                    
-                                    <h5 style="color: #f9508c;">Budgeting:</h5>
-                                    
-                                    <div class="row">
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Expected Number of Guests?</label>
-                                                <input type="text" id="" name="" class="form-control border-input" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Budget Range in NGN Naira</label>
-                                                <input type="text" id="" name="" class="form-control border-input" required>
-                                            </div>
-                                        </div>
-                                            
-                                    </div>
-
-                                    <br>
-
-                                    <button type="submit" class="btn btn-info btn-fill btn-wd">Save Event</button>
-                                    
-                                    <div class="clearfix"></div>
-                                    
-                                    <br>
-
-                                </form>
                             </div>
-                        
+                            
                         </div>
-                    
-                    </div>
-                
+
                 </div>
-            
+                
+                <!-- <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="card">
+                            
+                            <div class="content table-responsive table-full-width">
+                                
+                                <table class="table table-striped">
+                                
+                                    <thead>
+                                    
+                                        <tr style="color: #f9508c;">
+                                    
+                                            <th>S/N</th>
+                                    
+                                            <th>Event Name</th>
+                                    
+                                            <th>Event Type</th>
+
+                                            <th>Event Date</th>
+                                    
+                                        </tr>
+                                    
+                                    </thead>
+
+                                    <tbody>
+                                        
+                                        <tr onmouseover="ChangeColor(this, true);" onmouseout="ChangeColor(this, false);" onclick="DoNav('myeventdetails.html');">
+                                            <td>1</td>
+                                            <td>EbForever</td>
+                                            <td>Wedding</td>
+                                            <td>27/04/2018</td>
+                                        </tr>
+                                    
+                                    </tbody>
+                                
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
             </div>
-        
         </div>
 
 
