@@ -31,6 +31,26 @@
      
      <link href="https://res.cloudinary.com/dzomirrk1/raw/upload/v1531083483/cvii/themify-icons.css" rel="stylesheet">
 
+     <!-- This code enables the row table data to be clickable -->
+     <script type="text/javascript">
+        
+        function ChangeColor(tableRow, highLight)
+            {
+        if (highLight)
+            {
+        tableRow.style.backgroundColor = '#C5C6B6';
+            }
+        else
+            {
+        tableRow.style.backgroundColor = 'white';
+            }
+        
+        }
+    
+        function DoNav(theUrl)
+        {
+        document.location.href = theUrl;
+        }
     </script>
 
 </head>
@@ -57,7 +77,7 @@
                 
                 <li class="dropdown">
                     
-                    <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="mycompany.html" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="ti-world"></i>
                         <p>My Company  <b class="caret"></b></p>
                     </a>
@@ -72,7 +92,7 @@
 
                         <li><a href="companywebsite.html">Company Website</a></li>
 
-                        <li><a href="">Vendor Management</a></li>
+                        <li><a href="myvendors.html">Vendor Management</a></li>
 
                         <li><a href="">Marketing</a></li>
                             
@@ -95,7 +115,7 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand" href="#">SetUp Your Website</a>
+                    <a class="navbar-brand" href="#">Your Vendors</a>
                 </div>
 
                 <div class="collapse navbar-collapse">
@@ -120,147 +140,67 @@
          <div class="content">
             <div class="container-fluid">
                 
-                <h5>Select a theme and fill in the details and we get it up for you in no time.</h5><br>
+                <br>
+
+                <h5>Want To Add A New Vendor?
+
+                    <a href="onboardvendor.html">    
+                        <button type="" class="btn btn-info btn-fill btn-wd">Click To Add A New Vendor</button>
+                    </a>
                 
-                <div class="row">
+                </h5>
 
-                    <div class="col-md-4">
-                        <div class="card"><br>    
-                            <a href="" style="color: #777;">
-                                
-                                <div class="panel-body text-center">
-                                
-                                    <img src="assets/img/c1.png" style="width:100%" class="center"> <br>
-                                
-                                    <input type="checkbox"><p>Select Theme</p>
-                                
-                                </div>
-                            </a>            
-                        </div>
-                    </div>
-                        
-            
-                    <div class="col-md-4">
-                        <div class="card"><br>    
-                            <a href="" style="color: #777;">
-                            
-                                <div class="panel-body text-center">
-                                    
-                                    <img src="assets/img/c2.png" style="width:100%" class="center"> <br> <br>
-                                
-                                    <input type="checkbox"><p>Select Theme</p>
-
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-        
-                    <div class="col-md-4">
-                        <div class="card"><br>    
-                            <a href="" style="color: #777;">
-                                
-                                <div class="panel-body text-center">
-                                    
-                                    <img src="assets/img/c3.png" style="width:100%" class="center"> <br> <br>
-                                
-                                    <input type="checkbox"><p>Select Theme</p>
-
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
-            
-                </div>
+                <br><br>
                 
-                
+                <h5>Here are the vendors you've added so far:</h5><br>
                 
                 <div class="row">
 
                     <div class="col-md-12">
-                        
+
                         <div class="card">
-
-                            <div class="content">
-
-                                <form >
-
-                                    <h5 style="color: #f9508c;">Company Name:</h5>
+                            
+                            <div class="content table-responsive table-full-width">
+                                
+                                <table class="table table-striped">
+                                
+                                    <thead>
                                     
-                                    <div class="row">
-
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" id="" name="" class="form-control border-input" placeholder="Enter Company Name" required>
-                                            </div>
-                                        </div>
-                                            
-                                    </div>
-
-                                    <h5 style="color: #f9508c;">What Type(s) of Events Do You Manage?</h5>
+                                        <tr style="color: #f9508c;">
                                     
-                                    <div class="row">
-
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" id="" name="" class="form-control border-input" placeholder="Select The Type of event you manager" required>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <!-- <h5 style="color: #f9508c;">Event Date:</h5>
+                                            <th>S/N</th>
                                     
-                                    <div class="row">
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" id="" name="" class="form-control border-input" required>
-                                            </div>
-                                        </div>
-                                            
-                                    </div>
-
+                                            <th>Vendor Name</th>
                                     
-                                    <h5 style="color: #f9508c;">Budgeting:</h5>
+                                            <th>Vendor Type</th>
+
+                                            <th>Vendor Contact(s)</th>
+
+                                            <th>Budget Range (#) / event</th>
                                     
-                                    <div class="row">
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Expected Number of Guests?</label>
-                                                <input type="text" id="" name="" class="form-control border-input" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Budget Range in NGN Naira</label>
-                                                <input type="text" id="" name="" class="form-control border-input" required>
-                                            </div>
-                                        </div>
-                                            
-                                    </div> -->
-
-                                    <br>
-
-                                    <button type="submit" class="btn btn-info btn-fill btn-wd">Save Details</button>
+                                        </tr>
                                     
-                                    <div class="clearfix"></div>
-                                    
-                                    <br>
+                                    </thead>
 
-                                </form>
+                                    <tbody>
+                                        
+                                        <tr onmouseover="ChangeColor(this, true);" onmouseout="ChangeColor(this, false);" onclick="DoNav('');">
+                                            <td>1</td>
+                                            <td>Claud Ville</td>
+                                            <td>Decor</td>
+                                            <td>08111010233, 08043892320</td>
+                                            <td>300,000 - 500,000</td>
+                                        </tr>
+                                    
+                                    </tbody>
+                                
+                                </table>
+
                             </div>
-                        
                         </div>
-                    
                     </div>
-                
                 </div>
-            
             </div>
-        
         </div>
 
 
